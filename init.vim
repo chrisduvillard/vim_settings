@@ -40,3 +40,17 @@ nnoremap <C-H> <C-W><C-H>
 " Press CTRL+R to run python script into separate term window 
 nnoremap <C-R> :sp <CR> :term python % <CR>
 nnoremap <C-W> :bd!<CR>
+
+"Buffer management
+:nnoremap <Tab> :n<cr>
+:nnoremap <S-Tab> :N<cr>
+
+" Tab management
+nnoremap tn :tabnew<Space>
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprev<CR>
+nnoremap th :tabfirst<CR>
+nnoremap tl :tablast<CR>
+
+" Remap Esc key
+inoremap kj <Esc>
