@@ -27,7 +27,7 @@
     ],
     "vim.normalModeKeyBindings": [
      {
-         "before": ["w", "w"],
+         "before": ["t", "t"],
          "after": ["<C-w>"]
      }
     ],
