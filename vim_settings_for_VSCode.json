@@ -1,77 +1,72 @@
 {
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-    "python.formatting.provider": "black",
-    "kite.showWelcomeNotificationOnStartup": false,
     "workbench.iconTheme": "material-icon-theme",
-    "files.autoSave": "afterDelay",
-    "code-runner.executorMap": {
-        "python": "$pythonPath -u $fullFileName",
-    },
-    "workbench.startupEditor": "newUntitledFile",
-    "tabnine.experimentalAutoImports": true,
-    "workbench.colorTheme": "Cobalt2",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.enablePreview": false,
-    "vim.statusBarColors.commandlineinprogress": "",
-    "python.showStartPage": false,
-    "python.pythonPath": "C:\\Users\\Chris\\anaconda3\\envs\\quant\\python.exe",
 
-    
-    "vim.leader": "<Space>",
 
-    "vim.insertModeKeyBindingsNonRecursive": [
-     {
-         "before": ["j", "k"],
-         "after": ["<esc>"]
-     }
-    ],
-    "vim.normalModeKeyBindings": [
-     {
-         "before": ["t", "t"],
-         "after": ["<C-w>"]
-     }
-    ],
-        "vim.normalModeKeyBindingsNonRecursive": [
-          {
-            "before": ["J"],
-            "after": ["5", "j"]
-          },
-          {
-            "before": ["K"],
-            "after": ["5", "k"]
-          },
-          {
-            "before": ["<Leader>", "j"],
-            "after": ["J"]
-          },
-          {
-            "before": ["<Leader>", "t", "t"],
-            "commands": [":tabnew"]
-          },
-          {
-            "before": ["<Leader>", "t", "n"],
-            "commands": [":tabnext"]
-          },
-          {
-            "before": ["<Leader>", "t", "p"],
-            "commands": [":tabprev"]
-          },
-          {
-            "before": ["<Leader>", "t", "o"],
-            "commands": [":tabo"]
-          },
-          {
-            "before": ["leader", "w"],
-            "commands": [
-                "workbench.action.files.save",
-            ]
-          }
-        ],
-        "jupyter.sendSelectionToInteractiveWindow": false,
-        "jupyter.alwaysTrustNotebooks": true,
-        "workbench.editorAssociations": [],
-        "vim.commandLineModeKeyBindings": [
-        
+"vim.leader": "<Space>",
+
+"vim.insertModeKeyBindingsNonRecursive": [
+ {
+     "before": ["j", "k"],
+     "after": ["<esc>"]
+ }
+],
+"vim.normalModeKeyBindings": [
+ {
+     "before": ["q", "q"],
+     "after": ["<C-w>"]
+ }
+],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "c"],
+        "commands": ["editor.action.commentLine"],
+        "when": "editorTextFocus && !editorReadonly"
+      }
+      {
+        "before": ["J"],
+        "after": ["5", "j"]
+      },
+      {
+        "before": ["K"],
+        "after": ["5", "k"]
+      },
+      {
+        "before": ["<Leader>", "j"],
+        "after": ["J"]
+      },
+      {
+        "before": ["<Leader>", "t", "t"],
+        "commands": [":tabnew"]
+      },
+      {
+        "before": ["<Leader>", "t", "n"],
+        "commands": [":tabnext"]
+      },
+      {
+        "before": ["<Leader>", "t", "p"],
+        "commands": [":tabprev"]
+      },
+      {
+        "before": ["<Leader>", "t", "o"],
+        "commands": [":tabo"]
+      },
+      {
+        "before": ["leader", "w"],
+        "commands": [
+            "workbench.action.files.save",
         ]
+      }
+    ],
+    "python.showStartPage": false,
+    "workbench.colorTheme": "Cobalt2",
+    "workbench.startupEditor": "newUntitledFile",
+    "files.autoSave": "afterDelay",
+    "jupyter.alwaysTrustNotebooks": true,
+    "python.languageServer": "Pylance",
+    "workbench.editorAssociations": [
+      {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+      }
+    ]
 }
-    
