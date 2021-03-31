@@ -21,7 +21,15 @@
         "before": ["<leader>", "c"],
         "commands": ["editor.action.commentLine"],
         "when": "editorTextFocus && !editorReadonly"
-      }
+      },
+      {
+        "before": ["<Leader>", "s"],
+        "after": ["/"]
+      },
+      {
+        "before": ["<Leader>", "b", "s"],
+        "after": ["?"]
+      },
       {
         "before": ["J"],
         "after": ["5", "j"]
