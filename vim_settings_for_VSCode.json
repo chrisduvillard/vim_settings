@@ -2,7 +2,7 @@
     "workbench.iconTheme": "material-icon-theme",
 
 
-"vim.leader": "<Space>",
+"vim.leader": ",",
 
 "vim.insertModeKeyBindingsNonRecursive": [
  {
@@ -63,6 +63,18 @@
         "commands": [
             "workbench.action.files.save",
         ]
+      },
+      {
+        "before": ["<Leader>", "p"],
+        "commands": [
+            "workbench.action.showCommands",
+        ]
+      },
+      {
+        "before": ["<Leader>", "t"],
+        "commands": [
+            "workbench.action.gotoSymbol",
+        ]
       }
     ],
     "python.showStartPage": false,
@@ -70,11 +82,21 @@
     "workbench.startupEditor": "newUntitledFile",
     "files.autoSave": "afterDelay",
     "jupyter.alwaysTrustNotebooks": true,
-    "python.languageServer": "Pylance",
-    "workbench.editorAssociations": [
-      {
-        "viewType": "jupyter.notebook.ipynb",
-        "filenamePattern": "*.ipynb"
-      }
-    ]
+    "python.languageServer": "Jedi",
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook"
+    },
+    "tabnine.experimentalAutoImports": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+    },
+    "workbench.editor.enablePreview": false,
+    "explorer.sortOrder": "modified",
+    "vim.easymotion": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "sync.gist": "7994c5c64aa9f351117aa8d4be65884c"
 }
